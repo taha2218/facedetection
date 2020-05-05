@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI FD</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(31, 31, 31);
+    }
+    #video{
+        border: 1px solid black;
+        background-color: rgba(240, 248, 255, 0);
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        z-index: -1;
+    }
+</style>
+<body>
+    <video id="video" width="720" height="540" autoplay muted></video>
+    <script src="./face-api.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
